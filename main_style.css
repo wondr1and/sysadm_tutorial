@@ -1,0 +1,73 @@
+body {
+    background-color: #F5F5F5;
+}
+
+/*  =====МЕНЮ=====   */
+.page-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.page-header ul {
+    padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}
+
+.page-header ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;
+    background-color: white;
+    text-align: left;
+}
+
+.page-header a {
+    display:block;
+    padding:0 10px;
+    color:cornflowerblue;
+    font-size:20px;
+    line-height: 50px;
+    text-decoration:none;
+}
+
+.page-header a:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.page-header ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+.page-header ul li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+.page-header ul ul li {
+    min-width:130px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+/*  =====МЕНЮ  КОНЕЦ=====   */
+
+.block-content {
+    margin-top: 60px;
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 100px 5px rgba(158, 158, 158, 0.7);     
+}
